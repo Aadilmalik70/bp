@@ -6501,6 +6501,15 @@ html.rd-navbar-fixed-linked .page-header {
 	min-height: 40.10417vw;
 }
 
+
+.swiper-slider-5 .swiper-slide {
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	overflow: hidden; /* Ensure no overflow affects the display */
+}
+
+
 .swiper-custom-nav {
 	display: inline-block;
 	text-align: center;
