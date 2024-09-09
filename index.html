@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     .ie-panel {
       display: none;
@@ -78,7 +79,6 @@
     </header>
     <div class="position-relative">
       <!-- Page Header-->
-
       <section class="section novi-background bg-cover section-horace">
         <div class="section-horace-left bg-gray-800">
           <div class="section-horace-left-content text-center">
@@ -228,6 +228,10 @@
                     <label class="form-label" for="contact-phone">Phone</label>
                     <input class="form-input" id="contact-phone" type="text" name="phone"
                       data-constraints="@Required @PhoneNumber">
+                  </div>
+                  <div class="form-wrap">
+                    <label class="form-label" for="contact-note">Note</label>
+                    <input class="form-input" id="contact-note" type="text" name="note">
                   </div>
                   <div class="form-button">
                     <button class="button button-jerry button-primary" type="submit">Submit<span
@@ -419,7 +423,7 @@
               <div class="col-6 col-sm-4 col-md-12 col-lg-11 wow fadeInRight">
                 <article class="counter-classic">
                   <div class="counter-classic-header">
-                    <div class="heading-1 counter-classic-number"><span class="counter">7</span></div>
+                    <div class="heading-1 counter-classic-number"><span class="counter">6</span></div>
                     <h6 class="counter-classic-title">Years</h6>
                   </div>
                   <div class="counter-classic-text">We have been working in the industry since 2011.</div>
@@ -428,16 +432,16 @@
               <div class="col-6 col-sm-4 col-md-12 col-lg-11 wow fadeInRight" data-wow-delay=".05s">
                 <article class="counter-classic">
                   <div class="counter-classic-header">
-                    <div class="heading-1 counter-classic-number"><span class="counter">54</span></div>
+                    <div class="heading-1 counter-classic-number"><span class="counter">4</span></div>
                     <h6 class="counter-classic-title">Projects</h6>
                   </div>
-                  <div class="counter-classic-text">To this day, we have designed 54 residential projects.</div>
+                  <div class="counter-classic-text">To this day, we have designed 4 residential projects.</div>
                 </article>
               </div>
               <div class="col-6 col-sm-4 col-md-12 col-lg-11 wow fadeInRight" data-wow-delay=".1s">
                 <article class="counter-classic">
                   <div class="counter-classic-header">
-                    <div class="heading-1 counter-classic-number"><span class="counter">11</span></div>
+                    <div class="heading-1 counter-classic-number"><span class="counter">3</span></div>
                     <h6 class="counter-classic-title">Awards</h6>
                   </div>
                   <div class="counter-classic-text">Spectrum has been awarded for creativity many times.</div>
@@ -642,25 +646,75 @@
         </div>
         <div class="inset-md-left-custom-1 text-sm-left">
           <h5 class="title-style-2">Trusted by</h5>
-          <div class="clients-classic-wrap wow fadeInUp"><a class="clients-classic" href="#"><img
-                src="images/clients-1-87x54.png" alt="" width="87" height="54" /></a><a class="clients-classic"
-              href="#"><img src="images/clients-2-112x45.png" alt="" width="112" height="45" /></a><a
-              class="clients-classic" href="#"><img src="images/clients-3-146x28.png" alt="" width="146"
-                height="28" /></a><a class="clients-classic" href="#"><img src="images/clients-4-84x47.png" alt=""
-                width="84" height="47" /></a><a class="clients-classic" href="#"><img src="images/clients-5-131x29.png"
-                alt="" width="131" height="29" /></a></div>
+          <div class="clients-classic-wrap wow fadeInUp">
+            <a class="clients-classic" href="#">
+              <img src="images/clients-1-87x54.png" alt="" width="87" height="54" />
+            </a>
+            <a class="clients-classic" href="#">
+              <img src="images/clients-2-112x45.png" alt="" width="112" height="45" />
+            </a>
+            <a class="clients-classic" href="#">
+              <img src="images/clients-3-146x28.png" alt="" width="146" height="28" />
+            </a>
+            <a class="clients-classic" href="#">
+              <img src="images/clients-4-84x47.png" alt="" width="84" height="47" />
+            </a>
+            <a class="clients-classic" href="#">
+              <img src="images/clients-5-131x29.png" alt="" width="131" height="29" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section class="section novi-background bg-cover bg-white section-inset-1 parallax-scene-js" id="contacts">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 d-none d-lg-block wow fadeInLeft"><img src="images/index-6-538x694.png" alt=""
+          <!-- <div class="col-lg-6 d-none d-lg-block wow fadeInLeft"><img src="images/index-6-538x694.png" alt=""
               width="538" height="694" />
+          </div> -->
+
+          <div class="col-lg-6 d-none d-lg-block wow fadeInLeft custom-section d-flex justify-content-center align-items-center">
+            <!-- This div will hold the two info boxes with address and email -->
+            <div class="vc_column-inner">
+              <div class="wpb_wrapper">
+                <!-- First Box: Address -->
+                <div class="wbc-icon-box clearfix">
+                  <div class="wbc-icon-wrapper icon-background icon-circle">
+                    <span class="wbc-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                  </div>
+                  <div class="wbc-box-content">
+                    <h3>Address:</h3>
+                    <p class="text-muted">I &amp; S BUILDTECH PVT. LTD.<br>
+                      12th Floor, KLJ Tower North,<br>
+                      Netaji Subhash Place, Pitampura,<br>
+                      New Delhi – 110034.</p>
+                  </div>
+                </div>
+                <!-- Second Box: Email -->
+                <div class="wbc-icon-box clearfix">
+                  <div class="wbc-icon-wrapper icon-background icon-circle">
+                    <span class="wbc-icon">
+                      <i class="far fa-envelope"></i> 
+                    </span>
+                  </div>
+                  <div class="wbc-box-content">
+                    <h4>Email:</h4>
+                    <p>
+                      <a class="text-secondary" href="mailto:info@iandsbuildtech.com">info@iandsbuildtech.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+
           <div class="col-md-8 col-lg-6">
             <div class="inset-xl-left-35 section-sm">
-              <h3 class="wow fadeInRight">Get in touch with<br>our team</h3>
+              <h3 class="wow fadeInRight">Get in touch with Us!</h3>
               <h6 class="title-style-1 wow fadeInRight" data-wow-delay=".05s">Let’s work together!</h6>
               <div class="form-style-1 context-dark wow blurIn">
                 <!-- RD Mailform-->
@@ -679,6 +733,10 @@
                     <label class="form-label" for="contact-phone-2">Phone</label>
                     <input class="form-input" id="contact-phone-2" type="text" name="phone"
                       data-constraints="@Required @PhoneNumber">
+                  </div>
+                  <div class="form-wrap">
+                    <label class="form-label" for="contact-note-2">Note</label>
+                    <input class="form-input" id="contact-note-2" type="text" name="note">
                   </div>
                   <div class="form-button">
                     <button class="button button-jerry button-primary" type="submit">Submit<span
